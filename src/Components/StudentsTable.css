@@ -1,0 +1,163 @@
+body {
+  background-color: #bde0fe;
+}
+* {
+  color: #264653;
+}
+.students-container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 50px auto;
+  padding: 0 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+.students-addstudents,
+.students-studentstable {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  padding: 25px;
+}
+.addstudents-heading h1 {
+  font-size: 2rem;
+  margin: 15px 0;
+}
+.addstudents-body .input-box {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+.addstudents-body .input-box label {
+  padding: 10px 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.addstudents-body .input-box input[type="text"] {
+  border: 2px solid #264653;
+  outline: none;
+  border-radius: 4px;
+  padding: 15px 10px;
+  font-size: 1.5rem;
+}
+.addstudents-body .input-box .radio-box input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin: 0 15px;
+}
+.addstudents-body .input-box .radio-box {
+  display: flex;
+  align-items: center;
+}
+.btn-save,
+.btn-update {
+  margin: 15px 0;
+  background-color: #fff;
+  color: #00bbf9;
+  border: 2px solid #00bbf9;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn-save:hover {
+  background-color: #00bbf9;
+  color: #fff;
+}
+.btn-update {
+  color: #3a86ff;
+  border: 2px solid #3a86ff;
+  background-color: #fff;
+}
+.btn-update:hover {
+  background-color: #3a86ff;
+  color: #fff;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+.table thead tr {
+  background-color: #333;
+}
+.table thead th {
+  color: #fff;
+  text-align: left;
+}
+.table thead tr th:first-child {
+  border-radius: 12px 0 0 0;
+}
+.table thead tr th:last-child {
+  border-radius: 0 12px 0 0;
+}
+.table th,
+td {
+  padding: 15px 10px;
+  color: #264653;
+}
+.table tbody tr {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.table tbody tr:nth-child(even) {
+  background-color: #edf2f4;
+}
+.table tbody tr:hover {
+  background-color: #8d99ae;
+}
+.table tbody tr:last-child td:first-child {
+  border-radius: 0 0 0 12px;
+}
+.table tbody tr:last-child td:last-child {
+  border-radius: 0 0 12px 0;
+}
+.table .btn {
+  border: 1px solid #00bbf9;
+  background-color: #fff;
+  padding: 4px 8px;
+  border-radius: 8px;
+  color: #00bbf9;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.table .btn:hover {
+  background-color: #00bbf9;
+  color: #fff;
+}
+.table .btn-delete {
+  border: 1px solid #f94144;
+  background-color: #fff;
+  color: #f94144;
+}
+.table .btn-delete:hover {
+  background-color: #f94144;
+  color: #fff;
+}
+@media screen and (max-width: 1250px) {
+  html {
+    font-size: 80%;
+  }
+  .students-container {
+    grid-template-columns: 300px 1fr;
+  }
+}
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 75%;
+  }
+  .students-container {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 55%;
+  }
+}
